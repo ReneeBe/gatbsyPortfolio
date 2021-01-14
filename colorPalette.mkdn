@@ -1,0 +1,104 @@
+/* Object */
+{"Persian Green":"1b998b","Magnolia":"f8f1ff","Thistle":"decdf5","Old Lavender":"656176","Dark Liver":"534d56"}
+
+
+{"Thistle":"d1bce3","Lilac":"c49bbb","Cinereous":"a1867f","Purple Navy":"585481","Black Coffee":"41393e"}
+
+{"Tea Green":"c5ebc3","Laurel Green":"b7c8b5","Lilac Luster":"a790a5","Mauve Taupe":"875c74","Eggplant":"54414e"}
+
+
+
+/* CSV */
+aaabbc,8b8982,373f47,6c91c2,c3c9e9
+
+/* Array */
+["aaabbc","8b8982","373f47","6c91c2","c3c9e9"]
+
+/* Object */
+{"Cadet Blue Crayola":"aaabbc","Middle Grey":"8b8982","Charcoal":"373f47","Blue Gray":"6c91c2","Periwinkle Crayola":"c3c9e9"}
+
+/* Extended Array */
+[
+    {
+        "name": "Cadet Blue Crayola",
+        "hex":"aaabbc",
+        "rgb":[170,171,188],
+        "cmyk":[10,9,0,26],
+        "hsb":[237,10,74],
+        "hsl":[237,12,70],
+        "lab":[70,3,-9]
+    },
+    {
+        "name":"Middle Grey",
+        "hex":"8b8982",
+        "rgb":[139,137,130],
+        "cmyk":[0,1,6,45],
+        "hsb":[47,6,55],
+        "hsl":[47,4,53],
+        "lab":[57,-1,4]
+    },
+    {
+        "name":"Charcoal",
+        "hex":"373f47","rgb":[55,63,71],
+        "cmyk":[23,11,0,72],
+        "hsb":[210,23,28],
+        "hsl":[210,13,25],
+        "lab":[26,-1,-6]
+    },
+    {
+        "name":"Blue Gray",
+        "hex":"6c91c2",
+        "rgb":[108,145,194],
+        "cmyk":[44,25,0,24],
+        "hsb":[214,44,76],
+        "hsl":[214,41,59],
+        "lab":[59,0,-29]
+    },
+    {
+        "name":"Periwinkle Crayola",
+        "hex":"c3c9e9",
+        "rgb":[195,201,233],
+        "cmyk":[16,14,0,9],
+        "hsb":[231,16,91],
+        "hsl":[231,46,84],
+        "lab":[81,4,-17]
+    }
+]
+
+
+
+(1) {
+    Name: Silver Pink,
+    HEX: C0FDFB,
+    RGB: [176, 158, 153],
+    CMYK: [0, 10, 13, 31]
+}
+
+(2) {
+    Name: Misty Rose,
+    HEX: FEE9E1,
+    RGB: [254, 233, 225],
+    CMYK: [0, 8, 11, 0],
+}
+
+(3) {
+    Name: Unbleached Silk,
+    HEX: FAD4C0,
+    RGB: [250, 212, 192],
+    CMYK: [0, 15, 23, 2],
+}
+
+(4) {
+    Name: Green Sheen,
+    HEX: 64B6AC,
+    RGB: [100, 182, 172],
+    CMYK: [45, 0, 5, 29],
+}
+
+(5) {
+    Name: Celeste,
+    HEX: C0FDFB,
+    RGB: [192, 253, 251],
+    CMYK: [24, 0, 1, 1],
+}
+
