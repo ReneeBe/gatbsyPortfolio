@@ -20,7 +20,8 @@ const Footer = () => {
           </Link>
         </span>
         <hr />
-        <p className="footer__text">Hello</p>
+        <p className="social-links">Hello</p>
+
         <div className="social-links">
           {networks &&
             networks.map((network) => {
