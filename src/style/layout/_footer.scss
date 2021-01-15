@@ -26,6 +26,26 @@
       }
     }
   }
+  
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: $white-color;
+      font-size: 3rem;
+      width: 5rem;
+      height: 5rem;
+      margin: $default-font-size $default-font-size;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
 
   & hr {
     margin-top: 1rem;

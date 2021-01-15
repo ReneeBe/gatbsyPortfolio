@@ -20,8 +20,7 @@ const Footer = () => {
           </Link>
         </span>
         <hr />
-        <div className="socials">
-          Hello
+        <div className="footer__socials">
           {networks &&
             networks.map((network) => {
               const { id, name, url } = network;
