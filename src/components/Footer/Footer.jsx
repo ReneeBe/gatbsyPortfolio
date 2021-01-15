@@ -20,7 +20,7 @@ const Footer = () => {
           </Link>
         </span>
         <hr />
-        <p className="social-links">Hello</p>
+        <div className="social-links">Hello</div>
 
         <div className="social-links">
           {networks &&
