@@ -9,7 +9,7 @@
 
 ## Features
 
-⚡️ Modern UI Design + Reveal Animations\
+⚡️ Modern UI Design +  Animations\
 ⚡️ One Page Layout built with React\
 ⚡️ Styled with Bootstrap v4.3 + Custom SCSS\
 ⚡️ Fully Responsive\
