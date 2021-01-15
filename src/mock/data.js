@@ -73,7 +73,7 @@ export const footerData = {
     // {
     //   id: nanoid(),
     //   name: 'envelope-o',
-    //   url: 'mailto:reneelberger@gmail.com',
+    //   url: '',
     // },
     // {
     //   id: nanoid(),
