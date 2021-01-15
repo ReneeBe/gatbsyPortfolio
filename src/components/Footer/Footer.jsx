@@ -20,6 +20,7 @@ const Footer = () => {
           </Link>
         </span>
         <div className="social-links">
+          <p> When will you display?</p>
           {networks &&
             networks.map((network) => {
               const { id, name, url } = network;

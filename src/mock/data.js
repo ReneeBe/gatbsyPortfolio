@@ -70,16 +70,16 @@ export const contactData = {
 // FOOTER DATA
 export const footerData = {
   networks: [
-    {
-      id: nanoid(),
-      name: 'envelope-o',
-      url: 'mailto:reneelberger@gmail.com',
-    },
-    {
-      id: nanoid(),
-      name: 'phone',
-      url: 'tel:3475838729',
-    },
+    // {
+    //   id: nanoid(),
+    //   name: 'envelope-o',
+    //   url: 'mailto:reneelberger@gmail.com',
+    // },
+    // {
+    //   id: nanoid(),
+    //   name: 'phone',
+    //   url: 'tel:3475838729',
+    // },
     {
       id: nanoid(),
       name: 'linkedin',
