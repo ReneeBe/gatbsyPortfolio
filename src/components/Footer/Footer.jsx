@@ -19,20 +19,21 @@ const Footer = () => {
             <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
           </Link>
         </span>
+        <hr />
         <div className="social-links">
-          {/* <p> When will you display?</p> */}
           {networks &&
             networks.map((network) => {
               const { id, name, url } = network;
               return (
+                // eslint-disable-next-line prettier/prettier
                 <a
                   key={id}
-                  href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
+                  href={url}
                   rel="noopener noreferrer"
                   target="_blank"
                   aria-label={name}
                 >
-                  <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
+                  <i className={`fa fa-${name} fa-inverse`} />
                 </a>
               );
             })}
