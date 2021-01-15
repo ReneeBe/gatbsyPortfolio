@@ -20,17 +20,18 @@ const Footer = () => {
           </Link>
         </span>
         <hr />
-        <p className="footer__text">
+        <div className="socials">
           Hello
-          {networks && networks.map((network) => {
-            const { id, name, url } = network;
-            return (
-              <a key={id} href={url} rel="noopener noreferrer" target="_blank" aria-label={name}>
-                <i className={`fa fa-${name} fa-inverse`} />
-              </a>
-            );
-          })}
-        </p>
+          {networks &&
+            networks.map((network) => {
+              const { id, name, url } = network;
+              return (
+                <a key={id} href={url} rel="noopener noreferrer" target="_blank" aria-label={name}>
+                  <i className={`fa fa-${name} fa-inverse`} />
+                </a>
+              );
+            })}
+        </div>
 
         {/* <div className="social-links">
           {networks &&

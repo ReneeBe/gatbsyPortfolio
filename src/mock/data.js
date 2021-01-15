@@ -9,7 +9,7 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: "Hi! 2:19 I'm",
+  title: "Hi! 2:46 I'm",
   name: 'Renee',
   subtitle: 'a Full Stack Software Engineer in NYC.',
   cta: 'About me',
@@ -34,7 +34,7 @@ export const projectsData = [
     img: 'project.jpg',
     title: 'SokoCity',
     info:
-      'A puzzle adventure game built by myself, Esther Kim, Marie Luongo, and Jasmin Soltani. Technologies used include: Phaser.io, React.JS, Node.JS, Google Cloud Firestore, and a sokoban generator npm package.',
+      'A puzzle adventure game. Technologies used include: Phaser.io, React.JS, Node.JS, Google Cloud Firestore, and a sokoban generator npm package.',
     info2: 'My contributions here',
     url: 'https://soko-city.firebaseapp.com/',
     repo: 'https://github.com/destination-pop/soko-city', // if no repo, the button will not show up
