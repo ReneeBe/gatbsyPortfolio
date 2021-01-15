@@ -22,6 +22,14 @@ const Footer = () => {
         <hr />
         <p className="footer__text">
           Hello
+          {networks.map((network) => {
+            const { id, name, url } = network;
+            return (
+              <a key={id} href={url} rel="noopener noreferrer" target="_blank" aria-label={name}>
+                <i className={`fa fa-${name} fa-inverse`} />
+              </a>
+            );
+          })}
         </p>
 
         <div className="social-links">
