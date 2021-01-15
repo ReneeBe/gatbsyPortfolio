@@ -22,7 +22,7 @@ const Footer = () => {
         <hr />
         <p className="footer__text">
           Hello
-          {networks.map((network) => {
+          {networks && networks.map((network) => {
             const { id, name, url } = network;
             return (
               <a key={id} href={url} rel="noopener noreferrer" target="_blank" aria-label={name}>
@@ -32,7 +32,7 @@ const Footer = () => {
           })}
         </p>
 
-        <div className="social-links">
+        {/* <div className="social-links">
           {networks &&
             networks.map((network) => {
               const { id, name, url } = network;
@@ -49,7 +49,7 @@ const Footer = () => {
                 </a>
               );
             })}
-        </div>
+        </div> */}
         <hr />
         <p className="footer__text">
           © {new Date().getFullYear()} - Template developed by{' '}
