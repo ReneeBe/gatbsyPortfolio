@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, youtube, img, id } = project;
 
             return (
               <Row key={id}>
@@ -52,20 +52,31 @@ const Projects = () => {
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
+                        className="cta-btn"
                         href={url || '#!'}
                       >
-                        See Live
+                        <i className="fa fa-link fa-3x text-color-main" />
                       </a>
-
                       {repo && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
+                          className="cta-btn"
                           href={repo}
+                          aria-label="github"
                         >
-                          Github
+                          <i className="fa fa-github fa-3x text-color-main" />
+                        </a>
+                      )}
+                      {youtube && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn"
+                          href={youtube || '#!'}
+                          aria-label="youtube"
+                        >
+                          <i className="fa fa-youtube-play fa-3x text-color-main" />
                         </a>
                       )}
                     </div>

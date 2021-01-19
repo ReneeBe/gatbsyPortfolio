@@ -31,32 +31,36 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'sokocity_new.png',
     title: 'SokoCity',
     info:
-      'A puzzle adventure game. Technologies used include: Phaser.io, React.JS, Node.JS, Google Cloud Firestore, and a sokoban generator npm package.',
-    info2: 'My contributions here',
+      'An RPG adventure game featuring Sokoban puzzles, level progression, and randomly-generated inventory and terrain. The game was built out programmatically so that the levels can continue indefinitely. The current game features five dynamic levels. This app was built using: Phaser.io, React.JS, Node.JS, Google Cloud Firestore, and a sokoban generator npm package.',
+    info2:
+      "A major challenge of our project was determing how to use the puzzle generating node library we found in Phaser.io and add in puzzle solving functionality. The puzzle generator library made technically solvable puzzles, but we needed to make the output visible and functional as puzzle pieces in Phaser.io. I took on the challenge of translating the generator's output into actual game pieces, putting the puzzle sprites in the game's scene and adding game play physics to those pieces.",
     url: 'https://soko-city.firebaseapp.com/',
     repo: 'https://github.com/destination-pop/soko-city', // if no repo, the button will not show up
+    youtube: 'https://www.youtube.com/watch?v=9Yr-5DsVitw&feature=youtu.be',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'famex_square2.jpg',
     title: 'Fame-X',
     info:
       'An ecommerce site selling experiences with celebrities. This app was built using React.JS, Redux.JS, Express.JS, Node.JS, Sequelize, PostgreSQL, Passport, and Material UI.',
     info2: 'My contributions here',
     url: 'https://famex.herokuapp.com/',
     repo: 'https://github.com/Kill-9-Mockingbird/grace-shopper', // if no repo, the button will not show up
+    youtube: '',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'sokocity_square.jpg',
     title: 'Word Search App',
     info: '',
     info2: 'My contributions here',
     url: '',
     repo: 'https://github.com/ReneeBe/wordSearchApp', // if no repo, the button will not show up
+    youtube: '',
   },
 ];
 
