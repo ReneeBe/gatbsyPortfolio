@@ -19,7 +19,7 @@ const Footer = () => {
             <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
           </Link>
         </span>
-        <hr />
+        {/* <hr />
         <div className="footer__socials">
           {networks &&
             networks.map((network) => {
@@ -30,9 +30,9 @@ const Footer = () => {
                 </a>
               );
             })}
-        </div>
+        </div> */}
 
-        {/* <div className="social-links">
+        <div className="social-links">
           {networks &&
             networks.map((network) => {
               const { id, name, url } = network;
@@ -49,7 +49,7 @@ const Footer = () => {
                 </a>
               );
             })}
-        </div> */}
+        </div>
         <hr />
         <p className="footer__text">
           © {new Date().getFullYear()} - Template developed by{' '}
