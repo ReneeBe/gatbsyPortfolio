@@ -13,7 +13,7 @@ const ProjectImg = ({ filename, alt }) => (
               relativePath
               name
               childImageSharp {
-                fluid(maxWidth: 1366) {
+                fluid(maxWidth: 500, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -22,6 +22,13 @@ const ProjectImg = ({ filename, alt }) => (
         }
       }
     `}
+    /* maxWidth was 1366
+                  ...GatsbyImageSharpFluidLimitPresentationSize
+
+                      quality: 100
+
+
+     hello */
     render={(data) => {
       const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
 

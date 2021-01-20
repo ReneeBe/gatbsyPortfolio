@@ -32,7 +32,7 @@ const Projects = () => {
 
             return (
               <Row key={id}>
-                <Col lg={4} sm={12}>
+                <Col lg={6} sm={12}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
@@ -49,14 +49,16 @@ const Projects = () => {
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn"
-                        href={url || '#!'}
-                      >
-                        <i className="fa fa-link fa-3x text-color-main" />
-                      </a>
+                      {url && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn"
+                          href={url || '#!'}
+                        >
+                          <i className="fa fa-link fa-3x text-color-main" />
+                        </a>
+                      )}
                       {repo && (
                         <a
                           target="_blank"
@@ -82,7 +84,7 @@ const Projects = () => {
                     </div>
                   </Fade>
                 </Col>
-                <Col lg={8} sm={12}>
+                <Col lg={6} sm={12}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
@@ -92,7 +94,7 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__image">
                       <a
-                        href={url || '#!'}
+                        href={url || repo || '#!'}
                         target="_blank"
                         aria-label="Project Link"
                         rel="noopener noreferrer"

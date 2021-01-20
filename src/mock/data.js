@@ -31,7 +31,7 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'sokocity_new.png',
+    img: 'sokocity_square_new.jpg',
     title: 'SokoCity',
     info:
       'An RPG adventure game featuring Sokoban puzzles, level progression, and randomly-generated inventory and terrain. The game was built out programmatically so that the levels can continue indefinitely. The current game features five dynamic levels. This app was built using: Phaser.io, React.JS, Node.JS, Google Cloud Firestore, and a sokoban generator npm package.',
@@ -54,9 +54,10 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'sokocity_square.jpg',
+    img: 'all3Complete.001.jpeg',
     title: 'Word Search App',
-    info: '',
+    info:
+      'A react-native word search app for iOS using a custom word search board generator. This app was built using React.JS, React-Native, Node.JS, and Expo.',
     info2: 'My contributions here',
     url: '',
     repo: 'https://github.com/ReneeBe/wordSearchApp', // if no repo, the button will not show up
