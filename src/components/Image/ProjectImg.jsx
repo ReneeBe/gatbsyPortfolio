@@ -22,13 +22,7 @@ const ProjectImg = ({ filename, alt }) => (
         }
       }
     `}
-    /* maxWidth was 1366
-                  ...GatsbyImageSharpFluidLimitPresentationSize
-
-                      quality: 100
-
-
-     hello */
+    /* maxWidth was 1366 */
     render={(data) => {
       const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
 

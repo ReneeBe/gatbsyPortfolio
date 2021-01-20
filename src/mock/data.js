@@ -68,8 +68,8 @@ export const projectsData = [
 // CONTACT DATA
 export const contactData = {
   cta: 'Got any side project ideas, job opportunities, or just want to chat?',
-  btn: "Let's Set Up a Time",
-  email: 'mailto:reneelberger@gmail.com',
+  btn: "Let's Set a Time",
+  email: 'reneelberger@gmail.com',
 };
 
 // FOOTER DATA
