@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import wordSearchPreview from '../../images/wordSearchPreview.gif';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -28,7 +29,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, youtube, img, id } = project;
+            const { title, info, info2, techs, url, repo, youtube, img, id } = project;
 
             return (
               <Row key={id}>
@@ -48,6 +49,15 @@ const Projects = () => {
                             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
+                        <p>
+                          Technologies used include:
+                          <ul display="inline">
+                            {techs.map((tech, index) => (
+                              // eslint-disable-next-line react/no-array-index-key
+                              <li key={index + project.id}> {tech} </li>
+                            ))}
+                          </ul>
+                        </p>
                       </div>
                       {url && (
                         <a
@@ -113,7 +123,11 @@ const Projects = () => {
                           }}
                         >
                           <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
+                            {img === 'wordSearchPreview.gif' ? (
+                              <img src={wordSearchPreview} alt={title} />
+                            ) : (
+                              <ProjectImg alt={title} filename={img} />
+                            )}
                           </div>
                         </Tilt>
                       </a>

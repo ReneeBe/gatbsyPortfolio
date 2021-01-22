@@ -1,4 +1,5 @@
 import { nanoid } from 'nanoid';
+// import { sokoCityInfo } from './projectDescriptions';
 
 // HEAD DATA
 export const headData = {
@@ -19,11 +20,11 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.png',
   paragraphOne:
-    'I used to work in the fast-paced world of logistics and operations. I loved making different pieces of the operation work together better, but realized I wanted to make things work together better from a more powerful platform, so I enrolled in the Grace Hopper software immersive.',
+    'I used to work in logistics and operations. I loved making different pieces of the operation work together better, but realized I wanted to make things work together better from a more powerful platform, so I enrolled in the Grace Hopper software immersive.',
   paragraphTwo:
     'Now, I am a curious and enthusiastic software engineer looking to work on a team where we can collaboratively develop intuitive, efficient, and aesthetic tools.',
   paragraphThree:
-    'In my free time, I love crossword puzzles, trying new foods, maps, and bicycling. ',
+    'In my free time, I love trying new foods, crossword puzzles, maps, and bicycling. ',
   resume: 'https://drive.google.com/file/d/197DezlNem75HKJKiE_xyTJqe7D-Lp0F5/view?usp=sharing', // if no resume, the button will not show up
 };
 
@@ -34,9 +35,10 @@ export const projectsData = [
     img: 'sokocity_square_new.jpg',
     title: 'SokoCity',
     info:
-      'An RPG adventure game featuring Sokoban puzzles, level progression, and randomly-generated inventory and terrain. The game was built out programmatically so that the levels can continue indefinitely. The current game features five dynamic levels. This app was built using: Phaser.io, React.JS, Node.JS, Google Cloud Firestore, and a sokoban generator npm package.',
+      'An RPG adventure game featuring Sokoban puzzles, level progression, and randomly-generated inventory and terrain. The game was built out programmatically so that the levels can continue indefinitely. The current game features five dynamic levels. This app was built using a sokoban generator npm package. This app was built using Phaser.io, React, Node, Google Cloud Firestore, and a sokoban generator npm package.',
     info2:
       "A major challenge of our project was determing how to use the puzzle generating node library we found in Phaser.io and add in puzzle solving functionality. The puzzle generator library made technically solvable puzzles, but we needed to make the output visible and functional as puzzle pieces in Phaser.io. I took on the challenge of translating the generator's output into actual game pieces, putting the puzzle sprites in the game's scene and adding game play physics to those pieces.",
+    techs: ['Phaser.io', 'React', 'Node', 'Google Cloud Firestore'],
     url: 'https://soko-city.firebaseapp.com/',
     repo: 'https://github.com/destination-pop/soko-city', // if no repo, the button will not show up
     youtube: 'https://www.youtube.com/watch?v=9Yr-5DsVitw&feature=youtu.be',
@@ -44,24 +46,36 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'famex_square2.jpg',
-    title: 'Fame-X',
-    info:
-      'An ecommerce site selling experiences with celebrities. This app was built using React.JS, Redux.JS, Express.JS, Node.JS, Sequelize, PostgreSQL, Passport, and Material UI.',
+    title: 'FameX',
+    info: 'An ecommerce site selling experiences with celebrities. This app was built using ',
     info2: 'My contributions here',
+    techs: [
+      'React',
+      'Redux',
+      'Express',
+      'Node',
+      'Sequelize',
+      'PostgreSQL',
+      'Passport',
+      'Material UI',
+    ],
     url: 'https://famex.herokuapp.com/',
     repo: 'https://github.com/Kill-9-Mockingbird/grace-shopper', // if no repo, the button will not show up
     youtube: '',
   },
   {
     id: nanoid(),
-    img: 'all3Complete.001.jpeg',
+    img: 'wordSearchPreview.gif',
     title: 'Word Search App',
     info:
-      'A react-native word search app for iOS using a custom word search board generator. This app was built using React.JS, React-Native, Node.JS, and Expo.',
+      'A word search mobile app for iOS using a custom word search board generator. This app was built using React, React-Native, Node, and Expo.',
     info2: 'My contributions here',
+    techs: ['React', 'React-Native', 'Node', 'Expo'],
     url: '',
     repo: 'https://github.com/ReneeBe/wordSearchApp', // if no repo, the button will not show up
     youtube: '',
+    // 'img WAS wordSearchApp.jpeg',
+    // https://exp.host/@reneebe/wordSearchApp
   },
 ];
 
