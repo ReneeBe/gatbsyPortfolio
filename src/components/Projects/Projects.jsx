@@ -102,36 +102,36 @@ const Projects = () => {
                     delay={1000}
                     distance="30px"
                   >
-                    <div className="project-wrapper__image">
-                      <a
-                        href={url || repo || '#!'}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
-                      >
-                        <Tilt
-                          options={{
-                            reverse: false,
-                            max: 8,
-                            perspective: 1000,
-                            scale: 1,
-                            speed: 300,
-                            transition: true,
-                            axis: null,
-                            reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
-                          }}
+                    {img === 'wordSearchPreview.gif' ? (
+                      <img src={wordSearchPreview} alt={title} width="346" />
+                    ) : (
+                      <div className="project-wrapper__image">
+                        <a
+                          href={url || repo || '#!'}
+                          target="_blank"
+                          aria-label="Project Link"
+                          rel="noopener noreferrer"
                         >
-                          <div data-tilt className="thumbnail rounded">
-                            {img === 'wordSearchPreview.gif' ? (
-                              <img src={wordSearchPreview} alt={title} />
-                            ) : (
+                          <Tilt
+                            options={{
+                              reverse: false,
+                              max: 8,
+                              perspective: 1000,
+                              scale: 1,
+                              speed: 300,
+                              transition: true,
+                              axis: null,
+                              reset: true,
+                              easing: 'cubic-bezier(.03,.98,.52,.99)',
+                            }}
+                          >
+                            <div data-tilt className="thumbnail rounded">
                               <ProjectImg alt={title} filename={img} />
-                            )}
-                          </div>
-                        </Tilt>
-                      </a>
-                    </div>
+                            </div>
+                          </Tilt>
+                        </a>
+                      </div>
+                    )}
                   </Fade>
                 </Col>
               </Row>

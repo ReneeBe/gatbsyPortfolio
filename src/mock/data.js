@@ -11,8 +11,8 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: "Hi! I'm",
-  name: 'Renee',
-  subtitle: 'a Full Stack Software Engineer in NYC.',
+  name: 'Renee ',
+  subtitle: 'a Software Engineer in NYC.',
   cta: 'About me',
 };
 
@@ -81,8 +81,8 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: 'Got any side project ideas, job opportunities, or just want to chat?',
-  btn: "Let's Set a Time",
+  cta: 'Got any side project ideas, job opportunities, or just want to talk?',
+  btn: "Let's Chat",
   email: 'reneelberger@gmail.com',
 };
 
