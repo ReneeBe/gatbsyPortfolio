@@ -12,7 +12,7 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: "Hi! I'm",
-  name: 'Renee ',
+  name: 'Renee',
   subtitle: 'a Software Engineer in NYC.',
   cta: 'About me',
 };
@@ -33,7 +33,7 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'sokocity_square_new.jpg',
+    img: 'sokocitySquare.jpg',
     title: 'SokoCity',
     info:
       'An RPG adventure game featuring Sokoban puzzles, level progression, and randomly-generated inventory and terrain, this web game was developed with 3 other collaborators. SokoCity was built out programmatically so that the levels can continue indefinitely. The current game features five dynamic levels. This web app was built using a sokoban generator npm package.',
@@ -46,7 +46,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'famex_square2.jpg',
+    img: 'famexSquare.jpg',
     title: 'FameX',
     info:
       'An ecommerce site selling experiences with celebrities developed with 3 other collaborators. FameX features a persistent cart and seamless checkout experience.',
