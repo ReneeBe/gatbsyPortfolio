@@ -1,4 +1,5 @@
 import { nanoid } from 'nanoid';
+import rBergerResume from '../images/rBergerResume.pdf';
 // import { sokoCityInfo } from './projectDescriptions';
 
 // HEAD DATA
@@ -20,12 +21,12 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.png',
   paragraphOne:
-    'I used to work in logistics and operations. I loved making different pieces of the operation work together better, but realized I wanted to make things work together better from a more powerful platform, so I enrolled in the Grace Hopper software immersive.',
+    'I used to work in logistics and operations at growing startups. I loved making different pieces of the operation work together better, but realized I wanted to make things work together better from a more powerful platform, so I enrolled in the Grace Hopper software immersive.',
   paragraphTwo:
     'Now, I am a curious and enthusiastic software engineer looking to work on a team where we can collaboratively develop intuitive, efficient, and aesthetic tools.',
   paragraphThree:
-    'In my free time, I love trying new foods, crossword puzzles, maps, and bicycling. ',
-  resume: 'https://drive.google.com/file/d/197DezlNem75HKJKiE_xyTJqe7D-Lp0F5/view?usp=sharing', // if no resume, the button will not show up
+    'In my free time, I love bicycling, trying new foods, crossword puzzles, and maps.',
+  resume: rBergerResume,
 };
 
 // PROJECTS DATA
@@ -35,10 +36,10 @@ export const projectsData = [
     img: 'sokocity_square_new.jpg',
     title: 'SokoCity',
     info:
-      'An RPG adventure game featuring Sokoban puzzles, level progression, and randomly-generated inventory and terrain. The game was built out programmatically so that the levels can continue indefinitely. The current game features five dynamic levels. This app was built using a sokoban generator npm package. This app was built using Phaser.io, React, Node, Google Cloud Firestore, and a sokoban generator npm package.',
+      'An RPG adventure game featuring Sokoban puzzles, level progression, and randomly-generated inventory and terrain, this web game was developed with 3 other collaborators. SokoCity was built out programmatically so that the levels can continue indefinitely. The current game features five dynamic levels. This web app was built using a sokoban generator npm package.',
     info2:
       "A major challenge of our project was determing how to use the puzzle generating node library we found in Phaser.io and add in puzzle solving functionality. The puzzle generator library made technically solvable puzzles, but we needed to make the output visible and functional as puzzle pieces in Phaser.io. I took on the challenge of translating the generator's output into actual game pieces, putting the puzzle sprites in the game's scene and adding game play physics to those pieces.",
-    techs: ['Phaser.io', 'React', 'Node', 'Google Cloud Firestore'],
+    techs: ['Phaser.io', 'React', 'Node.js', 'Google Cloud Firestore'],
     url: 'https://soko-city.firebaseapp.com/',
     repo: 'https://github.com/destination-pop/soko-city', // if no repo, the button will not show up
     youtube: 'https://www.youtube.com/watch?v=9Yr-5DsVitw&feature=youtu.be',
@@ -47,17 +48,21 @@ export const projectsData = [
     id: nanoid(),
     img: 'famex_square2.jpg',
     title: 'FameX',
-    info: 'An ecommerce site selling experiences with celebrities. This app was built using ',
-    info2: 'My contributions here',
+    info:
+      'An ecommerce site selling experiences with celebrities developed with 3 other collaborators. FameX features a persistent cart and seamless checkout experience.',
+    info2:
+      'I worked to design the database schema, backend seed data, develop backend routes, and implement cart updates. Our first major developing project, we mostly developed and debugged in the pair programming format. ',
     techs: [
       'React',
       'Redux',
       'Express',
-      'Node',
+      'Node.js',
       'Sequelize',
       'PostgreSQL',
       'Passport',
       'Material UI',
+      'Google OAuth',
+      'Travis CI',
     ],
     url: 'https://famex.herokuapp.com/',
     repo: 'https://github.com/Kill-9-Mockingbird/grace-shopper', // if no repo, the button will not show up
@@ -67,10 +72,10 @@ export const projectsData = [
     id: nanoid(),
     img: 'wordSearchPreview.gif',
     title: 'Word Search App',
-    info:
-      'A word search mobile app for iOS using a custom word search board generator. This app was built using React, React-Native, Node, and Expo.',
-    info2: 'My contributions here',
-    techs: ['React', 'React-Native', 'Node', 'Expo'],
+    info: 'A word search mobile app for iOS using a custom word search board generator.',
+    info2:
+      'I started building this app for an internship application, but have continued since as I have found React-Native to be a fun challenge. I am currently fine-tuning my latest feature: allowing users to input their own words. ',
+    techs: ['React', 'React-Native', 'Node.js', 'Expo.io'],
     url: '',
     repo: 'https://github.com/ReneeBe/wordSearchApp', // if no repo, the button will not show up
     youtube: '',
