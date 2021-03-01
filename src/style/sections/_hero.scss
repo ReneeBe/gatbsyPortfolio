@@ -25,6 +25,10 @@
     padding: 0rem $default-font-size;
   }
 
+  .row {
+    margin-left: 0px;
+  }
+
   .hero-title {
     font-size: 5.6rem;
     font-weight: 700;
@@ -48,7 +52,7 @@
   }
 
   .hero-cta {
-    display: flex;
+    margin-right: 1%;    
 
     @include respond(tab-port) {
       justify-content: center;

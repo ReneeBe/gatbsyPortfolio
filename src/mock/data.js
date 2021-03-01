@@ -14,7 +14,9 @@ export const heroData = {
   title: "Hi! I'm",
   name: 'Renee',
   subtitle: 'a Software Engineer in NYC.',
-  cta: 'About me',
+  aboutMeLabel: 'About me',
+  projectsLabel: 'Projects',
+  contactLabel: 'Contact',
 };
 
 // ABOUT DATA
